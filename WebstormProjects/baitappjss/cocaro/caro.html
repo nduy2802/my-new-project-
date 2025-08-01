@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cờ Caro đơn giản</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            text-align: center;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+    <script src="caro.js"></script>
+</head>
+<body>
+<h2>Trò chơi Cờ Caro 3x3</h2>
+<p>Lượt của người chơi: <span id="currentPlayer">X</span></p>
+<button onclick="resetGame()">Chơi lại</button>
+<table id="board"></table>
+<p id="result" style="font-weight: bold; color: green;"></p>
+
+</body>
+</html>
