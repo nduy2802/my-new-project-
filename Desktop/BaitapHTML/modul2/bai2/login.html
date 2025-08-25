@@ -1,0 +1,89 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(120deg, #74ebd5 0%, #ACB6E5 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .login-box {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+      padding: 36px 32px 28px 32px;
+      width: 340px;
+      text-align: center;
+      border: none;
+      transition: box-shadow 0.3s;
+    }
+    .login-box:hover {
+      box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
+    }
+    .login-box h2 {
+      margin-bottom: 24px;
+      color: #007bff;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px 10px;
+      margin: 12px 0 18px 0;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      background: #f7f9fa;
+      font-size: 15px;
+      transition: border 0.2s;
+      outline: none;
+    }
+    input[type="text"]:focus, input[type="password"]:focus {
+      border: 1.5px solid #007bff;
+      background: #fff;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 28px;
+      margin: 8px 6px 0 6px;
+      background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+      transition: background 0.2s, transform 0.2s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 400px) {
+      .login-box {
+        width: 98vw;
+        padding: 18px 4vw;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="login-box">
+  <h2>Login</h2>
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+  <div>
+    <a href="#" class="btn">Login</a>
+    <a href="#" class="btn">Register</a>
+  </div>
+</div>
+</body>
+</html>
